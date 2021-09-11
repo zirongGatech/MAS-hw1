@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21471BDA26ED2B2C0067D19D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21471BD926ED2B2C0067D19D /* LoginView.swift */; };
 		21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */; };
 		21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */; };
 		21CD4FBD26EC4BB6009D9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		036154FBAC813377A8E1B7C5 /* Pods-MAS-hw1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1Tests.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1Tests/Pods-MAS-hw1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		21471BD926ED2B2C0067D19D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		21CD4FB526EC4BB4009D9A6D /* MAS-hw1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAS-hw1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1App.swift; sourceTree = "<group>"; };
 		21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		21CD4FB726EC4BB4009D9A6D /* MAS-hw1 */ = {
 			isa = PBXGroup;
 			children = (
+				21471BD926ED2B2C0067D19D /* LoginView.swift */,
 				21E546BB26EC9E680053CDAA /* ImagePicker.swift */,
 				78307C0126EC889E00509E2A /* CameraView.swift */,
 				78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */,
@@ -420,6 +423,7 @@
 				78307C0226EC889E00509E2A /* CameraView.swift in Sources */,
 				21E546BC26EC9E680053CDAA /* ImagePicker.swift in Sources */,
 				21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */,
+				21471BDA26ED2B2C0067D19D /* LoginView.swift in Sources */,
 				21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
