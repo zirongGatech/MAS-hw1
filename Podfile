@@ -8,6 +8,10 @@ target 'MAS-hw1' do
   # Pods for MAS-hw1
   # add pods for desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'FirebaseUI'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
   target 'MAS-hw1Tests' do
     inherit! :search_paths
