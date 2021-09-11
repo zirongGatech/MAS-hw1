@@ -13,12 +13,12 @@
 		21CD4FC026EC4BB6009D9A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4FBF26EC4BB6009D9A6D /* Preview Assets.xcassets */; };
 		21CD4FCB26EC4BB6009D9A6D /* MAS_hw1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FCA26EC4BB6009D9A6D /* MAS_hw1Tests.swift */; };
 		21CD4FD626EC4BB6009D9A6D /* MAS_hw1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */; };
+		21E546BC26EC9E680053CDAA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E546BB26EC9E680053CDAA /* ImagePicker.swift */; };
 		30C0A7D77977241CC50AF8CD /* Pods_MAS_hw1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C92565BB89EB46103D3F762 /* Pods_MAS_hw1.framework */; };
 		356F5C67453B03C3BDA8B3A2 /* Pods_MAS_hw1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D84BEDA7551D71133D136A /* Pods_MAS_hw1Tests.framework */; };
 		62679611E0B803B96906DC62 /* Pods_MAS_hw1_MAS_hw1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7161735DE73A9B86F124B93F /* Pods_MAS_hw1_MAS_hw1UITests.framework */; };
 		78307C0026EC6F7300509E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */; };
 		78307C0226EC889E00509E2A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0126EC889E00509E2A /* CameraView.swift */; };
-		78307C0626EC9DA200509E2A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0526EC9DA200509E2A /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +52,12 @@
 		21CD4FD126EC4BB6009D9A6D /* MAS-hw1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAS-hw1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1UITests.swift; sourceTree = "<group>"; };
 		21CD4FD726EC4BB6009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E546BB26EC9E680053CDAA /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2C92565BB89EB46103D3F762 /* Pods_MAS_hw1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAS_hw1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7161735DE73A9B86F124B93F /* Pods_MAS_hw1_MAS_hw1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAS_hw1_MAS_hw1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7185F4865DC3E2C54DFCA8F7 /* Pods-MAS-hw1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1Tests.release.xcconfig"; path = "Target Support Files/Pods-MAS-hw1Tests/Pods-MAS-hw1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78307C0126EC889E00509E2A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		78307C0526EC9DA200509E2A /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../../../ImagePicker.swift; sourceTree = "<group>"; };
 		9A3456976AB0D2DA063F929D /* Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B07F99682AADAE03294D2CA /* Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7B174BCDD2605C6EE86D5 /* Pods-MAS-hw1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1/Pods-MAS-hw1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		21CD4FB726EC4BB4009D9A6D /* MAS-hw1 */ = {
 			isa = PBXGroup;
 			children = (
-				78307C0526EC9DA200509E2A /* ImagePicker.swift */,
+				21E546BB26EC9E680053CDAA /* ImagePicker.swift */,
 				78307C0126EC889E00509E2A /* CameraView.swift */,
 				78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */,
 				21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */,
@@ -454,7 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78307C0226EC889E00509E2A /* CameraView.swift in Sources */,
-				78307C0626EC9DA200509E2A /* ImagePicker.swift in Sources */,
+				21E546BC26EC9E680053CDAA /* ImagePicker.swift in Sources */,
 				21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */,
 				21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */,
 			);
