@@ -8,7 +8,7 @@ target 'MAS-hw1' do
   # Pods for MAS-hw1
   # add pods for desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
-  pod 'FirebaseUI'
+  # pod 'FirebaseUI'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
