@@ -15,6 +15,7 @@
 		21CD4FD626EC4BB6009D9A6D /* MAS_hw1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */; };
 		78307C0026EC6F7300509E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */; };
 		78307C0226EC889E00509E2A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0126EC889E00509E2A /* CameraView.swift */; };
+		78307C0426EC90F500509E2A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0326EC90F500509E2A /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		21CD4FD726EC4BB6009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78307C0126EC889E00509E2A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		78307C0326EC90F500509E2A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */,
 				21CD4FC126EC4BB6009D9A6D /* Info.plist */,
 				21CD4FBE26EC4BB6009D9A6D /* Preview Content */,
+				78307C0326EC90F500509E2A /* ImagePicker.swift */,
 			);
 			path = "MAS-hw1";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78307C0226EC889E00509E2A /* CameraView.swift in Sources */,
+				78307C0426EC90F500509E2A /* ImagePicker.swift in Sources */,
 				21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */,
 				21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */,
 			);
