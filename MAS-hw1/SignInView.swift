@@ -26,7 +26,6 @@ struct LogContentView: View {
                 GallaryView()
                     .environmentObject(signinViewModel)
                     .navigationBarHidden(true)
-                
             }else {
                 SignInView()
             }
@@ -75,6 +74,11 @@ struct SignInView: View {
                 
                 NavigationLink("Create an Account", destination: SignOnView())
                     .padding(2.0)
+                
+                if !signinViewModel.errSignInMsg.isEmpty {
+                    Text(signinViewModel.errSignInMsg)
+                        .foregroundColor(.red)
+                }
             }
             .padding()
             
@@ -124,6 +128,11 @@ struct SignOnView: View {
                     })
                     .cornerRadius(10)
                     .padding()
+                    
+                    if !signinViewModel.errSignOnMsg.isEmpty {
+                        Text(signinViewModel.errSignOnMsg)
+                            .foregroundColor(.red)
+                    }
                     
                 }
                 .padding()
