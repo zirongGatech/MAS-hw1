@@ -11,6 +11,8 @@ import SwiftUI
 
 struct GallaryView: View {
     
+    @EnvironmentObject var signinViewModel: SignInViewModel
+    
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType
@@ -34,11 +36,9 @@ struct GallaryView: View {
                     print(self.username)
                 }
                 Spacer()
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        Text("sign out").foregroundColor(.red)
-                    })
+                Button(action: {signinViewModel.signOut()}, label: {
+                    Text("sign out").foregroundColor(.red)
+                })
                 Spacer()
                 
                 .navigationBarTitle(Text("Gallary"), displayMode: .inline)

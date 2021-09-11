@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 
+
 @main
 struct MAS_hw1App: App {
     init(){
@@ -15,7 +16,10 @@ struct MAS_hw1App: App {
     }
     var body: some Scene {
         WindowGroup {
-            GallaryView(username:String("aaaas"))
+            let signinViewModel = SignInViewModel()
+            LogContentView()
+                .environmentObject(signinViewModel)
+//            CameraView()
         }
     }
 }
