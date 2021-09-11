@@ -15,7 +15,7 @@ struct MAS_hw1App: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraView()
         }
     }
 }
