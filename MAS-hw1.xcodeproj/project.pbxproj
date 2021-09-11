@@ -7,66 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21CD4F4626EC4597009D9A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4F4526EC4597009D9A6D /* AppDelegate.swift */; };
-		21CD4F4826EC4597009D9A6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4F4726EC4597009D9A6D /* SceneDelegate.swift */; };
-		21CD4F4A26EC4597009D9A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4F4926EC4597009D9A6D /* ViewController.swift */; };
-		21CD4F4D26EC4597009D9A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4F4B26EC4597009D9A6D /* Main.storyboard */; };
-		21CD4F4F26EC4598009D9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4F4E26EC4598009D9A6D /* Assets.xcassets */; };
-		21CD4F5226EC4598009D9A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4F5026EC4598009D9A6D /* LaunchScreen.storyboard */; };
-		21CD4F5D26EC4598009D9A6D /* MAS_hw1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4F5C26EC4598009D9A6D /* MAS_hw1Tests.swift */; };
-		21CD4F6826EC4598009D9A6D /* MAS_hw1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4F6726EC4598009D9A6D /* MAS_hw1UITests.swift */; };
+		21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */; };
+		21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */; };
+		21CD4FBD26EC4BB6009D9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */; };
+		21CD4FC026EC4BB6009D9A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CD4FBF26EC4BB6009D9A6D /* Preview Assets.xcassets */; };
+		21CD4FCB26EC4BB6009D9A6D /* MAS_hw1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FCA26EC4BB6009D9A6D /* MAS_hw1Tests.swift */; };
+		21CD4FD626EC4BB6009D9A6D /* MAS_hw1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21CD4F5926EC4598009D9A6D /* PBXContainerItemProxy */ = {
+		21CD4FC726EC4BB6009D9A6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 21CD4F3A26EC4597009D9A6D /* Project object */;
+			containerPortal = 21CD4FAD26EC4BB4009D9A6D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 21CD4F4126EC4597009D9A6D;
+			remoteGlobalIDString = 21CD4FB426EC4BB4009D9A6D;
 			remoteInfo = "MAS-hw1";
 		};
-		21CD4F6426EC4598009D9A6D /* PBXContainerItemProxy */ = {
+		21CD4FD226EC4BB6009D9A6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 21CD4F3A26EC4597009D9A6D /* Project object */;
+			containerPortal = 21CD4FAD26EC4BB4009D9A6D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 21CD4F4126EC4597009D9A6D;
+			remoteGlobalIDString = 21CD4FB426EC4BB4009D9A6D;
 			remoteInfo = "MAS-hw1";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21CD4F4226EC4597009D9A6D /* MAS-hw1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAS-hw1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CD4F4526EC4597009D9A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21CD4F4726EC4597009D9A6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21CD4F4926EC4597009D9A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21CD4F4C26EC4597009D9A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		21CD4F4E26EC4598009D9A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		21CD4F5126EC4598009D9A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		21CD4F5326EC4598009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CD4F5826EC4598009D9A6D /* MAS-hw1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAS-hw1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CD4F5C26EC4598009D9A6D /* MAS_hw1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1Tests.swift; sourceTree = "<group>"; };
-		21CD4F5E26EC4598009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CD4F6326EC4598009D9A6D /* MAS-hw1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAS-hw1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CD4F6726EC4598009D9A6D /* MAS_hw1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1UITests.swift; sourceTree = "<group>"; };
-		21CD4F6926EC4598009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CD4FB526EC4BB4009D9A6D /* MAS-hw1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAS-hw1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1App.swift; sourceTree = "<group>"; };
+		21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21CD4FBF26EC4BB6009D9A6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21CD4FC126EC4BB6009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CD4FC626EC4BB6009D9A6D /* MAS-hw1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAS-hw1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CD4FCA26EC4BB6009D9A6D /* MAS_hw1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1Tests.swift; sourceTree = "<group>"; };
+		21CD4FCC26EC4BB6009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CD4FD126EC4BB6009D9A6D /* MAS-hw1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAS-hw1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAS_hw1UITests.swift; sourceTree = "<group>"; };
+		21CD4FD726EC4BB6009D9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21CD4F3F26EC4597009D9A6D /* Frameworks */ = {
+		21CD4FB226EC4BB4009D9A6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F5526EC4598009D9A6D /* Frameworks */ = {
+		21CD4FC326EC4BB6009D9A6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F6026EC4598009D9A6D /* Frameworks */ = {
+		21CD4FCE26EC4BB6009D9A6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,54 +72,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21CD4F3926EC4597009D9A6D = {
+		21CD4FAC26EC4BB4009D9A6D = {
 			isa = PBXGroup;
 			children = (
-				21CD4F4426EC4597009D9A6D /* MAS-hw1 */,
-				21CD4F5B26EC4598009D9A6D /* MAS-hw1Tests */,
-				21CD4F6626EC4598009D9A6D /* MAS-hw1UITests */,
-				21CD4F4326EC4597009D9A6D /* Products */,
+				21CD4FB726EC4BB4009D9A6D /* MAS-hw1 */,
+				21CD4FC926EC4BB6009D9A6D /* MAS-hw1Tests */,
+				21CD4FD426EC4BB6009D9A6D /* MAS-hw1UITests */,
+				21CD4FB626EC4BB4009D9A6D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21CD4F4326EC4597009D9A6D /* Products */ = {
+		21CD4FB626EC4BB4009D9A6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21CD4F4226EC4597009D9A6D /* MAS-hw1.app */,
-				21CD4F5826EC4598009D9A6D /* MAS-hw1Tests.xctest */,
-				21CD4F6326EC4598009D9A6D /* MAS-hw1UITests.xctest */,
+				21CD4FB526EC4BB4009D9A6D /* MAS-hw1.app */,
+				21CD4FC626EC4BB6009D9A6D /* MAS-hw1Tests.xctest */,
+				21CD4FD126EC4BB6009D9A6D /* MAS-hw1UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21CD4F4426EC4597009D9A6D /* MAS-hw1 */ = {
+		21CD4FB726EC4BB4009D9A6D /* MAS-hw1 */ = {
 			isa = PBXGroup;
 			children = (
-				21CD4F4526EC4597009D9A6D /* AppDelegate.swift */,
-				21CD4F4726EC4597009D9A6D /* SceneDelegate.swift */,
-				21CD4F4926EC4597009D9A6D /* ViewController.swift */,
-				21CD4F4B26EC4597009D9A6D /* Main.storyboard */,
-				21CD4F4E26EC4598009D9A6D /* Assets.xcassets */,
-				21CD4F5026EC4598009D9A6D /* LaunchScreen.storyboard */,
-				21CD4F5326EC4598009D9A6D /* Info.plist */,
+				21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */,
+				21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */,
+				21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */,
+				21CD4FC126EC4BB6009D9A6D /* Info.plist */,
+				21CD4FBE26EC4BB6009D9A6D /* Preview Content */,
 			);
 			path = "MAS-hw1";
 			sourceTree = "<group>";
 		};
-		21CD4F5B26EC4598009D9A6D /* MAS-hw1Tests */ = {
+		21CD4FBE26EC4BB6009D9A6D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				21CD4F5C26EC4598009D9A6D /* MAS_hw1Tests.swift */,
-				21CD4F5E26EC4598009D9A6D /* Info.plist */,
+				21CD4FBF26EC4BB6009D9A6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21CD4FC926EC4BB6009D9A6D /* MAS-hw1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				21CD4FCA26EC4BB6009D9A6D /* MAS_hw1Tests.swift */,
+				21CD4FCC26EC4BB6009D9A6D /* Info.plist */,
 			);
 			path = "MAS-hw1Tests";
 			sourceTree = "<group>";
 		};
-		21CD4F6626EC4598009D9A6D /* MAS-hw1UITests */ = {
+		21CD4FD426EC4BB6009D9A6D /* MAS-hw1UITests */ = {
 			isa = PBXGroup;
 			children = (
-				21CD4F6726EC4598009D9A6D /* MAS_hw1UITests.swift */,
-				21CD4F6926EC4598009D9A6D /* Info.plist */,
+				21CD4FD526EC4BB6009D9A6D /* MAS_hw1UITests.swift */,
+				21CD4FD726EC4BB6009D9A6D /* Info.plist */,
 			);
 			path = "MAS-hw1UITests";
 			sourceTree = "<group>";
@@ -131,13 +133,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21CD4F4126EC4597009D9A6D /* MAS-hw1 */ = {
+		21CD4FB426EC4BB4009D9A6D /* MAS-hw1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21CD4F6C26EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1" */;
+			buildConfigurationList = 21CD4FDA26EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1" */;
 			buildPhases = (
-				21CD4F3E26EC4597009D9A6D /* Sources */,
-				21CD4F3F26EC4597009D9A6D /* Frameworks */,
-				21CD4F4026EC4597009D9A6D /* Resources */,
+				21CD4FB126EC4BB4009D9A6D /* Sources */,
+				21CD4FB226EC4BB4009D9A6D /* Frameworks */,
+				21CD4FB326EC4BB4009D9A6D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,68 +147,68 @@
 			);
 			name = "MAS-hw1";
 			productName = "MAS-hw1";
-			productReference = 21CD4F4226EC4597009D9A6D /* MAS-hw1.app */;
+			productReference = 21CD4FB526EC4BB4009D9A6D /* MAS-hw1.app */;
 			productType = "com.apple.product-type.application";
 		};
-		21CD4F5726EC4598009D9A6D /* MAS-hw1Tests */ = {
+		21CD4FC526EC4BB6009D9A6D /* MAS-hw1Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21CD4F6F26EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1Tests" */;
+			buildConfigurationList = 21CD4FDD26EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1Tests" */;
 			buildPhases = (
-				21CD4F5426EC4598009D9A6D /* Sources */,
-				21CD4F5526EC4598009D9A6D /* Frameworks */,
-				21CD4F5626EC4598009D9A6D /* Resources */,
+				21CD4FC226EC4BB6009D9A6D /* Sources */,
+				21CD4FC326EC4BB6009D9A6D /* Frameworks */,
+				21CD4FC426EC4BB6009D9A6D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21CD4F5A26EC4598009D9A6D /* PBXTargetDependency */,
+				21CD4FC826EC4BB6009D9A6D /* PBXTargetDependency */,
 			);
 			name = "MAS-hw1Tests";
 			productName = "MAS-hw1Tests";
-			productReference = 21CD4F5826EC4598009D9A6D /* MAS-hw1Tests.xctest */;
+			productReference = 21CD4FC626EC4BB6009D9A6D /* MAS-hw1Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		21CD4F6226EC4598009D9A6D /* MAS-hw1UITests */ = {
+		21CD4FD026EC4BB6009D9A6D /* MAS-hw1UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21CD4F7226EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1UITests" */;
+			buildConfigurationList = 21CD4FE026EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1UITests" */;
 			buildPhases = (
-				21CD4F5F26EC4598009D9A6D /* Sources */,
-				21CD4F6026EC4598009D9A6D /* Frameworks */,
-				21CD4F6126EC4598009D9A6D /* Resources */,
+				21CD4FCD26EC4BB6009D9A6D /* Sources */,
+				21CD4FCE26EC4BB6009D9A6D /* Frameworks */,
+				21CD4FCF26EC4BB6009D9A6D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21CD4F6526EC4598009D9A6D /* PBXTargetDependency */,
+				21CD4FD326EC4BB6009D9A6D /* PBXTargetDependency */,
 			);
 			name = "MAS-hw1UITests";
 			productName = "MAS-hw1UITests";
-			productReference = 21CD4F6326EC4598009D9A6D /* MAS-hw1UITests.xctest */;
+			productReference = 21CD4FD126EC4BB6009D9A6D /* MAS-hw1UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21CD4F3A26EC4597009D9A6D /* Project object */ = {
+		21CD4FAD26EC4BB4009D9A6D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					21CD4F4126EC4597009D9A6D = {
+					21CD4FB426EC4BB4009D9A6D = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					21CD4F5726EC4598009D9A6D = {
+					21CD4FC526EC4BB6009D9A6D = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 21CD4F4126EC4597009D9A6D;
+						TestTargetID = 21CD4FB426EC4BB4009D9A6D;
 					};
-					21CD4F6226EC4598009D9A6D = {
+					21CD4FD026EC4BB6009D9A6D = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 21CD4F4126EC4597009D9A6D;
+						TestTargetID = 21CD4FB426EC4BB4009D9A6D;
 					};
 				};
 			};
-			buildConfigurationList = 21CD4F3D26EC4597009D9A6D /* Build configuration list for PBXProject "MAS-hw1" */;
+			buildConfigurationList = 21CD4FB026EC4BB4009D9A6D /* Build configuration list for PBXProject "MAS-hw1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 21CD4F3926EC4597009D9A6D;
-			productRefGroup = 21CD4F4326EC4597009D9A6D /* Products */;
+			mainGroup = 21CD4FAC26EC4BB4009D9A6D;
+			productRefGroup = 21CD4FB626EC4BB4009D9A6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21CD4F4126EC4597009D9A6D /* MAS-hw1 */,
-				21CD4F5726EC4598009D9A6D /* MAS-hw1Tests */,
-				21CD4F6226EC4598009D9A6D /* MAS-hw1UITests */,
+				21CD4FB426EC4BB4009D9A6D /* MAS-hw1 */,
+				21CD4FC526EC4BB6009D9A6D /* MAS-hw1Tests */,
+				21CD4FD026EC4BB6009D9A6D /* MAS-hw1UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21CD4F4026EC4597009D9A6D /* Resources */ = {
+		21CD4FB326EC4BB4009D9A6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CD4F5226EC4598009D9A6D /* LaunchScreen.storyboard in Resources */,
-				21CD4F4F26EC4598009D9A6D /* Assets.xcassets in Resources */,
-				21CD4F4D26EC4597009D9A6D /* Main.storyboard in Resources */,
+				21CD4FC026EC4BB6009D9A6D /* Preview Assets.xcassets in Resources */,
+				21CD4FBD26EC4BB6009D9A6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F5626EC4598009D9A6D /* Resources */ = {
+		21CD4FC426EC4BB6009D9A6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F6126EC4598009D9A6D /* Resources */ = {
+		21CD4FCF26EC4BB6009D9A6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,68 +255,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21CD4F3E26EC4597009D9A6D /* Sources */ = {
+		21CD4FB126EC4BB4009D9A6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CD4F4A26EC4597009D9A6D /* ViewController.swift in Sources */,
-				21CD4F4626EC4597009D9A6D /* AppDelegate.swift in Sources */,
-				21CD4F4826EC4597009D9A6D /* SceneDelegate.swift in Sources */,
+				21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */,
+				21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F5426EC4598009D9A6D /* Sources */ = {
+		21CD4FC226EC4BB6009D9A6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CD4F5D26EC4598009D9A6D /* MAS_hw1Tests.swift in Sources */,
+				21CD4FCB26EC4BB6009D9A6D /* MAS_hw1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21CD4F5F26EC4598009D9A6D /* Sources */ = {
+		21CD4FCD26EC4BB6009D9A6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CD4F6826EC4598009D9A6D /* MAS_hw1UITests.swift in Sources */,
+				21CD4FD626EC4BB6009D9A6D /* MAS_hw1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21CD4F5A26EC4598009D9A6D /* PBXTargetDependency */ = {
+		21CD4FC826EC4BB6009D9A6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21CD4F4126EC4597009D9A6D /* MAS-hw1 */;
-			targetProxy = 21CD4F5926EC4598009D9A6D /* PBXContainerItemProxy */;
+			target = 21CD4FB426EC4BB4009D9A6D /* MAS-hw1 */;
+			targetProxy = 21CD4FC726EC4BB6009D9A6D /* PBXContainerItemProxy */;
 		};
-		21CD4F6526EC4598009D9A6D /* PBXTargetDependency */ = {
+		21CD4FD326EC4BB6009D9A6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21CD4F4126EC4597009D9A6D /* MAS-hw1 */;
-			targetProxy = 21CD4F6426EC4598009D9A6D /* PBXContainerItemProxy */;
+			target = 21CD4FB426EC4BB4009D9A6D /* MAS-hw1 */;
+			targetProxy = 21CD4FD226EC4BB6009D9A6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		21CD4F4B26EC4597009D9A6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21CD4F4C26EC4597009D9A6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		21CD4F5026EC4598009D9A6D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21CD4F5126EC4598009D9A6D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		21CD4F6A26EC4598009D9A6D /* Debug */ = {
+		21CD4FD826EC4BB6009D9A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		21CD4F6B26EC4598009D9A6D /* Release */ = {
+		21CD4FD926EC4BB6009D9A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,13 +412,16 @@
 			};
 			name = Release;
 		};
-		21CD4F6D26EC4598009D9A6D /* Debug */ = {
+		21CD4FDB26EC4BB6009D9A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MAS-hw1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MAS-hw1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,13 +433,16 @@
 			};
 			name = Debug;
 		};
-		21CD4F6E26EC4598009D9A6D /* Release */ = {
+		21CD4FDC26EC4BB6009D9A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MAS-hw1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MAS-hw1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,14 +454,14 @@
 			};
 			name = Release;
 		};
-		21CD4F7026EC4598009D9A6D /* Debug */ = {
+		21CD4FDE26EC4BB6009D9A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MAS-hw1Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,14 +475,14 @@
 			};
 			name = Debug;
 		};
-		21CD4F7126EC4598009D9A6D /* Release */ = {
+		21CD4FDF26EC4BB6009D9A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MAS-hw1Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +496,7 @@
 			};
 			name = Release;
 		};
-		21CD4F7326EC4598009D9A6D /* Debug */ = {
+		21CD4FE126EC4BB6009D9A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -528,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		21CD4F7426EC4598009D9A6D /* Release */ = {
+		21CD4FE226EC4BB6009D9A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -550,43 +537,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21CD4F3D26EC4597009D9A6D /* Build configuration list for PBXProject "MAS-hw1" */ = {
+		21CD4FB026EC4BB4009D9A6D /* Build configuration list for PBXProject "MAS-hw1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21CD4F6A26EC4598009D9A6D /* Debug */,
-				21CD4F6B26EC4598009D9A6D /* Release */,
+				21CD4FD826EC4BB6009D9A6D /* Debug */,
+				21CD4FD926EC4BB6009D9A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21CD4F6C26EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1" */ = {
+		21CD4FDA26EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21CD4F6D26EC4598009D9A6D /* Debug */,
-				21CD4F6E26EC4598009D9A6D /* Release */,
+				21CD4FDB26EC4BB6009D9A6D /* Debug */,
+				21CD4FDC26EC4BB6009D9A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21CD4F6F26EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1Tests" */ = {
+		21CD4FDD26EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21CD4F7026EC4598009D9A6D /* Debug */,
-				21CD4F7126EC4598009D9A6D /* Release */,
+				21CD4FDE26EC4BB6009D9A6D /* Debug */,
+				21CD4FDF26EC4BB6009D9A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21CD4F7226EC4598009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1UITests" */ = {
+		21CD4FE026EC4BB6009D9A6D /* Build configuration list for PBXNativeTarget "MAS-hw1UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21CD4F7326EC4598009D9A6D /* Debug */,
-				21CD4F7426EC4598009D9A6D /* Release */,
+				21CD4FE126EC4BB6009D9A6D /* Debug */,
+				21CD4FE226EC4BB6009D9A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21CD4F3A26EC4597009D9A6D /* Project object */;
+	rootObject = 21CD4FAD26EC4BB4009D9A6D /* Project object */;
 }
