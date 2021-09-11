@@ -23,7 +23,7 @@ struct LogContentView: View {
 //
 //                    })
 //                }
-                GallaryView(username: String("aaaa"))
+                GallaryView()
                     .environmentObject(signinViewModel)
                     .navigationBarHidden(true)
                 

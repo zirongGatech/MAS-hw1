@@ -8,8 +8,13 @@
 import Foundation
 import SwiftUI
 import FirebaseStorage
+import FirebaseFirestore
+import FirebaseAuth
+import CryptoKit
 
 struct CameraView: View {
+    
+    private var db = Firestore.firestore()
     
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
@@ -74,18 +79,38 @@ struct CameraView: View {
 func uploadImage(image:UIImage){
     if let imageData = image.jpegData(compressionQuality: 1){
         let storage=Storage.storage()
-        storage.reference().child("temp").putData(imageData, metadata: nil){
-            (data, err) in
-            if let err = err{
-                print("an error has occured - \(err.localizedDescription)")
-                
-            }else{
-                print("image uploaded successfully")
+        if let email=Auth.auth().currentUser?.email {
+            let filename=getHashString(inputString: email + getCurrentTime())
+            storage.reference().child(filename).putData(imageData, metadata: nil){
+                (data, err) in
+                if let err = err{
+                    print("an error has occured - \(err.localizedDescription)")
+                    
+                }else{
+                    print("image uploaded successfully")
+                }
             }
+            
+        } else{
+            print("no current user find, please quit sign in again")
         }
+        
     }else{
         print("could not unwrap/case image to data")
     }
+}
+
+func getCurrentTime() -> String{
+    let dateFormatter : DateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    let date = Date()
+    return dateFormatter.string(from: date)
+}
+
+func getHashString(inputString: String) -> String{
+    let inputData = Data(inputString.utf8)
+    let hashed = SHA256.hash(data: inputData)
+    return hashed.compactMap{ String(format: "%02x", $0)}.joined()
 }
 
 struct CameraView_Previews: PreviewProvider {

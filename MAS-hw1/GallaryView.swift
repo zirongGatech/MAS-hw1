@@ -6,8 +6,14 @@
 //
 
 import Foundation
-
 import SwiftUI
+import FirebaseAuth
+
+let testData = [
+    MyImage(author: "ren", uploadTime: "2020-01-01 00:00:00", filename:"temp"),
+    MyImage(author: "zirong", uploadTime: "2020-01-02 00:00:00", filename:"temp"),
+    MyImage(author: "ren", uploadTime: "2020-01-03 00:00:00", filename:"temp")
+]
 
 struct GallaryView: View {
     
@@ -19,8 +25,7 @@ struct GallaryView: View {
         = .camera
     
     @State var image: UIImage?
-    @State var imagelist: [UIImage] = []
-    var username: String
+    @State var imagelist: [UIImage] = [UIImage]()
     
     var body: some View {
         NavigationView {
@@ -33,7 +38,7 @@ struct GallaryView: View {
                 
                 Button("Upload"){
                     print("Upload succeed")
-                    print(self.username)
+                    print(Auth.auth().currentUser?.email ?? "")
                 }
                 Spacer()
                 Button(action: {signinViewModel.signOut()}, label: {
@@ -59,6 +64,6 @@ struct GallaryView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        GallaryView(username: String("aaa"))
+        GallaryView()
     }
 }
