@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import FirebaseStorage
 
 struct CameraView: View {
     
@@ -16,15 +17,18 @@ struct CameraView: View {
         = .camera
     
     @State var image: UIImage?
+    var username: String = "anonymous"
     
     var body: some View {
         
         NavigationView {
             VStack{
-                Text("There is an image")
-                Image(uiImage: image ?? UIImage(named: "placeholder")!)
+                Spacer()
+                
+                Image(uiImage: image ?? UIImage(named: "gallery")!)
                     .resizable().frame(width: 300, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+                // Button for choosing picture
                 Button("Choose Picture"){
                     self.showSheet = true
                 }.padding()
@@ -41,11 +45,46 @@ struct CameraView: View {
                     .cancel()])
                 })
                 
-                .navigationTitle("Camera View")
+                
+                Spacer()
+                
+                // Button for uploading image
+                Button(action: {
+                    if let thisImage = self.image {
+                        uploadImage(image: thisImage)
+                    } else{
+                        print("couldn't upload image - no image present")
+                    }
+                    
+                }, label: {
+                    Text("Upload")
+                })
+                Spacer()
+                    
+                .navigationTitle("Pick Your Photo")
+
+
             }
         }.sheet(isPresented: $showImagePicker){
             ImagePicker(image: $image, isShown: self.$showImagePicker, sourceType: self.sourceType)
         }
+    }
+}
+
+func uploadImage(image:UIImage){
+    if let imageData = image.jpegData(compressionQuality: 1){
+        let storage=Storage.storage()
+        storage.reference().child("temp").putData(imageData, metadata: nil){
+            (data, err) in
+            if let err = err{
+                print("an error has occured - \(err.localizedDescription)")
+                
+            }else{
+                print("image uploaded successfully")
+            }
+        }
+    }else{
+        print("could not unwrap/case image to data")
     }
 }
 

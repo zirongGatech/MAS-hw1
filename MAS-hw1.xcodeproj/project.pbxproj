@@ -20,6 +20,8 @@
 		62679611E0B803B96906DC62 /* Pods_MAS_hw1_MAS_hw1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7161735DE73A9B86F124B93F /* Pods_MAS_hw1_MAS_hw1UITests.framework */; };
 		78307C0026EC6F7300509E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */; };
 		78307C0226EC889E00509E2A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0126EC889E00509E2A /* CameraView.swift */; };
+		78307C0826ED301E00509E2A /* GallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0726ED301E00509E2A /* GallaryView.swift */; };
+		78307C0D26ED513900509E2A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0C26ED513900509E2A /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		7185F4865DC3E2C54DFCA8F7 /* Pods-MAS-hw1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1Tests.release.xcconfig"; path = "Target Support Files/Pods-MAS-hw1Tests/Pods-MAS-hw1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78307C0126EC889E00509E2A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		78307C0726ED301E00509E2A /* GallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryView.swift; sourceTree = "<group>"; };
+		78307C0C26ED513900509E2A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		9A3456976AB0D2DA063F929D /* Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B07F99682AADAE03294D2CA /* Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7B174BCDD2605C6EE86D5 /* Pods-MAS-hw1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1/Pods-MAS-hw1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,9 +124,11 @@
 		21CD4FB726EC4BB4009D9A6D /* MAS-hw1 */ = {
 			isa = PBXGroup;
 			children = (
+				78307C0B26ED511B00509E2A /* Model */,
 				21471BD926ED2B2C0067D19D /* LoginView.swift */,
 				21E546BB26EC9E680053CDAA /* ImagePicker.swift */,
 				78307C0126EC889E00509E2A /* CameraView.swift */,
+				78307C0726ED301E00509E2A /* GallaryView.swift */,
 				78307BFF26EC6F7300509E2A /* GoogleService-Info.plist */,
 				21CD4FB826EC4BB4009D9A6D /* MAS_hw1App.swift */,
 				21CD4FBA26EC4BB4009D9A6D /* ContentView.swift */,
@@ -167,6 +173,14 @@
 				D4D84BEDA7551D71133D136A /* Pods_MAS_hw1Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78307C0B26ED511B00509E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78307C0C26ED513900509E2A /* Image.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EB64C952F62C1279522FF965 /* Pods */ = {
@@ -420,10 +434,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78307C0D26ED513900509E2A /* Image.swift in Sources */,
 				78307C0226EC889E00509E2A /* CameraView.swift in Sources */,
 				21E546BC26EC9E680053CDAA /* ImagePicker.swift in Sources */,
 				21CD4FBB26EC4BB4009D9A6D /* ContentView.swift in Sources */,
 				21471BDA26ED2B2C0067D19D /* LoginView.swift in Sources */,
+				78307C0826ED301E00509E2A /* GallaryView.swift in Sources */,
 				21CD4FB926EC4BB4009D9A6D /* MAS_hw1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
