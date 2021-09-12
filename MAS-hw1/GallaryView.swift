@@ -8,12 +8,7 @@
 import Foundation
 import SwiftUI
 import FirebaseAuth
-
-let testData = [
-    MyImage(author: "ren", uploadTime: "2020-01-01 00:00:00", filename:"temp"),
-    MyImage(author: "zirong", uploadTime: "2020-01-02 00:00:00", filename:"temp"),
-    MyImage(author: "ren", uploadTime: "2020-01-03 00:00:00", filename:"temp")
-]
+import FirebaseStorage
 
 struct GallaryView: View {
     
@@ -27,14 +22,25 @@ struct GallaryView: View {
     @State var image: UIImage?
     @State var imagelist: [UIImage] = [UIImage]()
     
+    @ObservedObject private var viewModel = ImageViewModel()
+    let download_agent = DownloadImageViewModel()
+    
+    
     var body: some View {
         NavigationView {
             VStack{
-                VStack{
-                    ScrollView{
+                List(viewModel.myImages){ image in
+                    VStack(alignment: .leading){
+                        Text(image.author) 
+                            .font(.headline)
+                        Text(image.uploadTime)
+                            .font(.subheadline)
+
+                        Image(uiImage: download_agent.fileImageMap[image.filename] ?? UIImage()).resizable().frame(width: 300, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).padding()
+                    }.onAppear(){download_agent.download(filename: image.filename)}
                         
-                    }
                 }
+                
                 
                 Button("Upload"){
                     print("Upload succeed")
@@ -45,15 +51,18 @@ struct GallaryView: View {
                     Text("sign out").foregroundColor(.red)
                 })
                 Spacer()
-                
-                .navigationBarTitle(Text("Gallary"), displayMode: .inline)
-                .navigationBarItems(trailing: HStack{
-                    NavigationLink(
-                        destination: CameraView(),
-                        label: {
-                            Text("Upload photo")
-                        })
-                })
+                    
+                    .navigationBarTitle(Text("Gallary"), displayMode: .inline)
+                    .navigationBarItems(trailing: HStack{
+                        NavigationLink(
+                            destination: CameraView(),
+                            label: {
+                                Text("Upload photo")
+                            })
+                    })
+                    .onAppear(){
+                        self.viewModel.fetchData()
+                    }
             }
         }.sheet(isPresented: $showImagePicker){
             ImagePicker(image: $image, isShown: self.$showImagePicker, sourceType: self.sourceType)
@@ -61,6 +70,7 @@ struct GallaryView: View {
         
     }
 }
+
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {

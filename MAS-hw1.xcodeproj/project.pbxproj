@@ -22,6 +22,8 @@
 		78307C0226EC889E00509E2A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0126EC889E00509E2A /* CameraView.swift */; };
 		78307C0826ED301E00509E2A /* GallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0726ED301E00509E2A /* GallaryView.swift */; };
 		78307C0D26ED513900509E2A /* MyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0C26ED513900509E2A /* MyImage.swift */; };
+		78307C0F26ED860500509E2A /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C0E26ED860500509E2A /* ImageViewModel.swift */; };
+		78307C1126ED8F3C00509E2A /* DownloadImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78307C1026ED8F3C00509E2A /* DownloadImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		78307C0126EC889E00509E2A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		78307C0726ED301E00509E2A /* GallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryView.swift; sourceTree = "<group>"; };
 		78307C0C26ED513900509E2A /* MyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImage.swift; sourceTree = "<group>"; };
+		78307C0E26ED860500509E2A /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		78307C1026ED8F3C00509E2A /* DownloadImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageViewModel.swift; sourceTree = "<group>"; };
 		9A3456976AB0D2DA063F929D /* Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B07F99682AADAE03294D2CA /* Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1-MAS-hw1UITests/Pods-MAS-hw1-MAS-hw1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7B174BCDD2605C6EE86D5 /* Pods-MAS-hw1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAS-hw1.debug.xcconfig"; path = "Target Support Files/Pods-MAS-hw1/Pods-MAS-hw1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				21CD4FBC26EC4BB6009D9A6D /* Assets.xcassets */,
 				21CD4FC126EC4BB6009D9A6D /* Info.plist */,
 				21CD4FBE26EC4BB6009D9A6D /* Preview Content */,
+				78307C0E26ED860500509E2A /* ImageViewModel.swift */,
+				78307C1026ED8F3C00509E2A /* DownloadImageViewModel.swift */,
 			);
 			path = "MAS-hw1";
 			sourceTree = "<group>";
@@ -434,9 +440,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78307C1126ED8F3C00509E2A /* DownloadImageViewModel.swift in Sources */,
 				78307C0D26ED513900509E2A /* MyImage.swift in Sources */,
 				78307C0226EC889E00509E2A /* CameraView.swift in Sources */,
 				21E546BC26EC9E680053CDAA /* ImagePicker.swift in Sources */,
+				78307C0F26ED860500509E2A /* ImageViewModel.swift in Sources */,
 				21CD4FBB26EC4BB4009D9A6D /* SignInView.swift in Sources */,
 				78307C0826ED301E00509E2A /* GallaryView.swift in Sources */,
 				21471BDC26ED32DA0067D19D /* SignInViewModel.swift in Sources */,

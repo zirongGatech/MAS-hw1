@@ -77,19 +77,45 @@ struct CameraView: View {
 }
 
 func uploadImage(image:UIImage){
-    if let imageData = image.jpegData(compressionQuality: 1){
+    if let imageData = image.jpegData(compressionQuality: 0.5){
         let storage=Storage.storage()
         if let email=Auth.auth().currentUser?.email {
-            let filename=getHashString(inputString: email + getCurrentTime())
-            storage.reference().child(filename).putData(imageData, metadata: nil){
+            let time = getCurrentTime()
+            let filename=getHashString(inputString: email + time) + ".jpg"
+            
+            // upload image
+            let imgRef = storage.reference(withPath: filename)
+            
+            imgRef.putData(imageData, metadata: nil){
                 (data, err) in
                 if let err = err{
                     print("an error has occured - \(err.localizedDescription)")
                     
                 }else{
                     print("image uploaded successfully")
+//                    print("Meta \(data)")
+                    imgRef.downloadURL { (url, err) in
+                        // databse
+                        let imageDictionary = [
+                            "author": email,
+                            "uploadTime": time,
+                            "filename": filename,
+                            "url": String(describing: url?.absoluteString)
+                        ]
+                        let docRef = Firestore.firestore().document("myimages/\(UUID().uuidString)")
+                        print("Sending data")
+                        docRef.setData(imageDictionary){(error) in
+                            if let error = error {
+                                print("error = \(error)")
+                            } else {
+                                print("data upload successfully")
+                            }
+                        }
+                    }
                 }
             }
+            
+            
             
         } else{
             print("no current user find, please quit sign in again")
